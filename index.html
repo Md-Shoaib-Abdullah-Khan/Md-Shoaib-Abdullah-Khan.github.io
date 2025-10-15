@@ -1,255 +1,1389 @@
 <!DOCTYPE html>
-<html>
-<title>Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fontawesome.com/search?q=education&o=r&s=solid&f=sharp">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://kit.fontawesome.com/4f206e8789.js" crossorigin="anonymous"></script>
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar  w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <p>Md Shoaib Abdullah Khan</p>
-  <img src="./img/shoaib.jpg" class="rounded" style="width:100%" >
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xlarge"></i>
-    <p>About</p>
-  </a>
-  <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa-sharp fa-solid fa-graduation-cap w3-xlarge"></i>
-    <p>Education</p>
-  </a>
-
-<a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-  <i class="fa-sharp fa-solid fa-chart-simple w3-xlarge"></i>
-  <p>Skills</p>
-</a>
-<a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-  <i class="fa-sharp fa-solid fa-diagram-project w3-xlarge"></i>
-  <p>Projects</p>
-</a>
-  <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa-sharp fa-solid fa-chart-column w3-xlarge"></i>
-    <p>Experience</p>
-  </a>
-  
-  <a href="#certifications" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa-sharp fa-solid fa-star w3-xlarge"></i>
-    <p>Certifications</p>
-  </a>
-  <a href="#hobby" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa-sharp fa-solid fa-camera-retro w3-xlarge"></i>
-    <p>Hobby</p>
-  </a>
-  <a href="#blog" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa-sharp fa-solid fa-pen-nib w3-xlarge"></i>
-    <p>Blog</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa-sharp fa-solid fa-address-card w3-xlarge"></i>
-    <p>Contact</p>
-  </a>
-</a>
-<a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-  <i class="fa-regular fa-file w3-xlarge"></i>
-  <p>Resume</p>
-</a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <img src="./img/shoaib1.jpeg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
-</div>
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>I am very much passionate about technology. At my childhood I a was always curious about electronics devices. When I used any kind of gadget I always thought about how it works. 
-      This curiosity made me choose to study in Computer Science and Engineering.<br>
-      My favourite subject is math and physics. I always like to solve problems regarding math and physics. <br>
-      Currently I am developing my skills as a computitive programmer and web developer. My dream is to become a Software Engineer of a teck giant company..
-    </p>
-  </div>
-  <div class="w3-padding-64 w3-content w3-text-grey" id="education">
-    <h3 class="w3-padding-16 w3-text-light-grey" >Education</h3>
-    <hr style="width:200px" class="w3-opacity">
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Md Shoaib Abdullah Khan, AI Engineer, LLMs, RAG, Deep Learning, Machine Learning">
+    <meta name="author" content="Md. Shoaib Abdullah Khan">
+    <meta name="description" content="AI Engineer specializing in LLMs, AI Agents, and RAG systems with deep expertise in Deep Learning.">
     
-
-     <ul>
-        <li><b>BSc in Computer Science & Engineering, University of Rajshahi </b>| December 2022 | CGPA: 3.73 out of 4</li><br><br>
-    <li><b>Higher secondary school certificate, Rajshahi Govt. City College</b> | April 2019 | GPA 5.0</li><br><br>
-    <li><b>Secondary school certificate, Rajshahi Collegiate School and College, Rajshahi</b> | Febrauary 2017 | GPA 5.0</li>
-    </ul>
-  </div>
-  <div class="w3-padding-64 w3-content w3-text-grey" id="skills">
-    <h3 class="w3-padding-16 w3-text-white" >Skills</h3>
-    <hr style="width:200px" class="w3-opacity">
-    <table class="table table-dark table-hover w3-text-light-grey">
-        <tbody>
-          <tr>
-            <td>Programming Language: </td>
-            <td><ul> <li>C</li><li>C++</li><li>JAVA</li><li>Verilog</li><li>C#</li><li>Python</li></ul></td>
-             <td></td>
-          </tr>
-          <tr>
-            <td>Version Control Tool:</td>
-            <td><ul> <li>Git</li></ul></td>
-          </tr>
-          <tr>
-            <td>Markup language	:</td>
-            <td> <ul> <li>HTML</li><li>CSS</li><li>Java Script</li></ul></td>
-          </tr>
-          <tr>
-            <td>Platform :</td>
-            <td><ul> <li>Android</li><li>Arduino</li></td>
-          </tr>
-          <tr>
-            <td>Editing tool :</td>
-            <td><ul> <li>Adobe Photoshop</li><li>Adobe Illustrator</li><li>Adobe Premier Pro</li></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-      <div class="w3-padding-64 w3-content w3-text-grey" id="projects">
-        <h2 class="w3-text-light-grey">Projects</h2>
-        <hr style="width:200px" class="w3-opacity">
-      <ul>
-        <li>Zeal: It's a game project by SFML.</li>
-        <li>Zeal 2.0: It's a game project on Unity using C# language.</li>
-        <li>SONIC : It's a line following robot. It's made by arduino.</li>
-    </ul>
-   
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
     
-    <div class="w3-padding-64 w3-content w3-text-grey" id="experience">
-      <h2 class="w3-text-light-grey">Experience</h2>
-      <hr style="width:200px" class="w3-opacity">
-      <ul>
-        <li>District Admin Manager | ICT Olympiad Bangladesh | August 2018 – January 2020</li>
-    </ul>
-    </div>
-
+    <title>Shoaib Khan - AI Engineer</title>
     
-      
-    
- 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-   
-    
-    
-      </div>
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #8b5cf6;
+            --accent-color: #ec4899;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
 
-      
-    </div>
-    
-  
-  <!-- Portfolio Section 
-  -->
-  <div class="w3-padding-64 w3-content" id="hobby">
-    <h2 class="w3-text-light-grey">Hobby</h2>
-    <hr style="width:200px" class="w3-opacity">
+        body.dark-theme {
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-tertiary: #334155;
+            --border-color: #334155;
+        }
 
-    <p>My hobby is Photography. Here are some of my photographs taken by my DSLR.</p>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="./img/photography/1.jpg" style="width:100%">
-        <img src="./img/photography/2.jpg" style="width:100%">
-        <img src="./img/photography/3.jpg" style="width:100%">
-      </div>
+        html {
+            scroll-behavior: smooth;
+        }
 
-      <div class="w3-half">
-        <img src="./img/photography/4.jpg" style="width:100%">
-        <img src="./img/photography/5.jpg" style="width:100%">
-        <img src="./img/photography/6.jpg" style="width:100%">
-        <img src="./img/photography/7.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-  
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-white" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background-color 0.3s ease;
+        }
 
-    <div class="w3-section w3-center">
-      <p>Got a question or a job to offer? Feel free to knock. I'd love to hear from you. Send me a message and I'll respond as soon as possible.</p>
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Rajshahi, Bangladesh</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +8801303608379</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mdshoaib.a.khan@mail.com</p>
-      <a href="https://www.facebook.com/profile.php?id=100005788028985"> <i class="fa-brands fa-facebook w3-black w3-hover-opacity w3-xlarge"></i></a>
-    <a href="https://www.instagram.com/s.h.o.a.i.b_a_k.h.a.n/?next=%2F&hl=bn"><i class="fa fa-instagram w3-black w3-hover-opacity w3-xlarge"></i></a>
-    <a href="https://www.linkedin.com/in/shoaib-khan-5475031aa/"><i class="fa fa-linkedin w3-hover-opacity w3-black w3-xlarge"></i></a>
-    <a href="https://github.com/Md-Shoaib-Abdullah-Khan"></a><i class="fa-brands fa-github w3-xlarge w3-hover-opacity w3-padding-16"></i></a>
-  </div>
-    <p class="w3-section w3-left">Let's get in touch. Send me a message:</p>
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid var(--border-color);
+        }
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p class="w3-section w3-center">
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-    
-    
- 
+        .dark-theme .header {
+            background: rgba(15, 23, 42, 0.8);
+        }
 
-  <!-- End Contact Section -->
-  </div>
-  <div class="w3-padding-64 w3-content w3-text-grey" id="resume">
-    <h2 class="w3-text-light-grey">Resume</h2>
-    <hr style="width:200px" class="w3-opacity">
-  <button class="w3-button w3-light-grey w3-padding-large w3-section w3-center">
-    <i class="fa fa-download w3-center"></i> Download Resume
-  </button>
-  </div>
+        .scroll-header {
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .nav__logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav__list {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav__link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav__link:hover,
+        .nav__link.active-link {
+            color: var(--primary-color);
+        }
+
+        .nav__link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav__link:hover::after,
+        .nav__link.active-link::after {
+            width: 100%;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-primary);
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            transform: rotate(20deg);
+        }
+
+        .nav__toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .hero__container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero__content h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero__content h2 {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .hero__description {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .hero__buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 2px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .hero__social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            background: var(--gradient-primary);
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .hero__image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero__blob {
+            width: 400px;
+            height: 400px;
+            background: var(--gradient-primary);
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: morph 8s ease-in-out infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-xl);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero__blob img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes morph {
+            0% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+            50% {
+                border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+            }
+            100% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section__header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section__title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section__title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+        }
+
+        .section__subtitle {
+            color: var(--text-secondary);
+            font-size: 1.125rem;
+            margin-top: 1.5rem;
+        }
+
+        /* About Section */
+        .about__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about__content {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .about__stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stat-card h3 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card p {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Skills Section */
+        .skills__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-color);
+        }
+
+        .skill-card__header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-card__icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .skill-card__title {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            padding: 0.5rem 1rem;
+            background: var(--bg-tertiary);
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: var(--gradient-primary);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Experience Section */
+        .experience__container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gradient-primary);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 3rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -3.5rem;
+            top: 0;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: var(--primary-color);
+            border: 3px solid var(--bg-primary);
+            box-shadow: 0 0 0 4px var(--primary-color);
+        }
+
+        .timeline-content {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .timeline-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content .company {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content .date {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Projects Section */
+        .projects__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .project-card__image {
+            height: 200px;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-card__image svg {
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-card__image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.1) 75%),
+                        linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.1) 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+
+        .project-card__content {
+            padding: 2rem;
+        }
+
+        .project-card__title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .project-card__description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .project-card__tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-tag {
+            padding: 0.25rem 0.75rem;
+            background: var(--bg-tertiary);
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .project-card__links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        /* Contact Section */
+        .contact__container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact__info {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-item__icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .contact-item__content {
+            text-align: left;
+        }
+
+        .contact-item__title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item__value {
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-secondary);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer__content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer__social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav__list {
+                display: none;
+            }
+
+            .nav__toggle {
+                display: block;
+            }
+
+            .hero__container,
+            .about__container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero__content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero__blob {
+                width: 300px;
+                height: 300px;
+            }
+
+            .about__stats {
+                grid-template-columns: 1fr;
+            }
+
+            .section__title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Scroll to top */
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .scroll-top.show {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">Md Shoaib Abdullah Khan</a>
+            <ul class="nav__list">
+                <li><a href="#home" class="nav__link active-link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#experience" class="nav__link">Experience</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+                <li><button class="theme-toggle" id="theme-toggle"><i class="uil uil-moon"></i></button></li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content fade-in">
+                <h1>Hi, I'm Shoaib</h1>
+                <h2>AI Engineer & Researcher</h2>
+                <p class="hero__description">
+                    Specializing in Machine Learning, Deep Learning, AI Agents, and RAG systems. 
+                    I build intelligent, scalable AI solutions that solve complex real world problems.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        Get in Touch <i class="uil uil-message"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        View Projects <i class="uil uil-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero__social">
+                    <a href="https://github.com/Md-Shoaib-Abdullah-Khan" target="_blank" class="social-link">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shoaib-khan-5475031aa/" target="_blank" class="social-link">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://www.kaggle.com/mdshoaibabdullahkhan" target="_blank" class="social-link">
+                        <i class="uil uil-chart-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="hero__blob">
+                    <img src="images/2.png" alt="Thumbs Up" class="about__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section__header">
+            <h2 class="section__title">About Me</h2>
+            <p class="section__subtitle">Get to know me better</p>
+        </div>
+        <div class="about__container">
+            <div class="about__content">
+                <p>
+                    I'm an AI Engineer at <strong>Codatron</strong>, where I architect and deploy enterprise-grade AI solutions. 
+                    My expertise lies in building sophisticated LLM fine-tuning pipelines, implementing RAG systems, 
+                    and developing autonomous AI agents.
+                </p>
+                <p style="margin-top: 1rem;">
+                    With a strong foundation in Deep Learning and a passion for solving complex problems, 
+                    I've contributed to multiple award-winning projects and various innovative AI applications.
+                </p>
+                <p style="margin-top: 1rem;">
+                    I'm also a competitive programmer with <strong>1000+ problems solved</strong> across platforms like Codeforces (Specialist), 
+                    CodeChef (3 star), and LeetCode.
+                </p>
+            </div>
+            <div>
+                <div class="about__stats">
+                    <div class="stat-card">
+                        <h3>01+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>05+</h3>
+                        <p>Major Projects</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>1000+</h3>
+                        <p>Problems Solved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience" style="background: var(--bg-secondary);">
+        <div class="section__header">
+            <h2 class="section__title">Experience</h2>
+            <p class="section__subtitle">My professional journey</p>
+        </div>
+        <div class="experience__container">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>AI Engineer</h3>
+                        <p class="company">Codatron</p>
+                        <p class="date"><i class="uil uil-calendar-alt"></i> January 2024 - Present</p>
+                        <ul style="color: var(--text-secondary); line-height: 1.8;">
+                            <li>Architected enterprise-grade AI solutions including LLM fine-tuning pipelines and RAG systems</li>
+                            <li>Engineered BTRAG, a scalable Bangla RAG chatbot leveraging LangChain and FAISS</li>
+                            <li>Designed content-based movie recommendation engine with 85% user satisfaction</li>
+                            <li>Conducted R&D on advanced DL architectures including VAEs, Transformers, and GANs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 4rem;">
+                <h3 style="margin-bottom: 2rem;">Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>B.Sc. in Computer Science & Engineering</h3>
+                            <p class="company">Rajshahi University</p>
+                            <p class="date"><i class="uil uil-calendar-alt"></i> January 2020 - August 2025</p>
+                            <p style="color: var(--text-secondary);">CGPA: 3.75 out of 4.00</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Higher Secondary Certificate (HSC)</h3>
+                            <p class="company">Rajshahi Govt City College</p>
+                            <p class="date"><i class="uil uil-calendar-alt"></i> April 2019</p>
+                            <p style="color: var(--text-secondary);">GPA: 5.00 out of 5.00</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Secondary School Certificate (SSC)</h3>
+                            <p class="company">Rajshahi Collegiate School</p>
+                            <p class="date"><i class="uil uil-calendar-alt"></i> February 2017</p>
+                            <p style="color: var(--text-secondary);">GPA: 5.00 out of 5.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="section__header">
+            <h2 class="section__title">Technical Skills</h2>
+            <p class="section__subtitle">My expertise and technologies</p>
+        </div>
+        <div class="skills__container">
+            <div class="skill-card">
+                <div class="skill-card__header">
+                    <div class="skill-card__icon">
+                        <i class="uil uil-robot"></i>
+                    </div>
+                    <div>
+                        <h3 class="skill-card__title">Generative AI & LLMs</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">1+ Years Experience</p>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <span class="skill-tag">LangChain</span>
+                    <span class="skill-tag">LangGraph</span>
+                    <span class="skill-tag">RAG</span>
+                    <span class="skill-tag">HuggingFace</span>
+                    <span class="skill-tag">Ollama</span>
+                    <span class="skill-tag">n8n</span>
+                    <span class="skill-tag">Unsloth</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card__header">
+                    <div class="skill-card__icon">
+                        <i class="uil uil-brain"></i>
+                    </div>
+                    <div>
+                        <h3 class="skill-card__title">AI & Deep Learning</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">2+ Years Experience</p>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Keras</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">Transformers</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card__header">
+                    <div class="skill-card__icon">
+                        <i class="uil uil-eye"></i>
+                    </div>
+                    <div>
+                        <h3 class="skill-card__title">Computer Vision & NLP</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">2+ Years Experience</p>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <span class="skill-tag">OpenCV</span>
+                    <span class="skill-tag">YOLO</span>
+                    <span class="skill-tag">NLTK</span>
+                    <span class="skill-tag">Transformers</span>
+                    <span class="skill-tag">Sentence Transformers</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card__header">
+                    <div class="skill-card__icon">
+                        <i class="uil uil-brackets-curly"></i>
+                    </div>
+                    <div>
+                        <h3 class="skill-card__title">Programming Languages</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">3+ Years Experience</p>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">MySQL</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card__header">
+                    <div class="skill-card__icon">
+                        <i class="uil uil-server"></i>
+                    </div>
+                    <div>
+                        <h3 class="skill-card__title">DevOps & Deployment</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">1+ Years Experience</p>
+                    </div>
+                </div>
+                <div class="skill-list">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">VPS</span>
+                    <span class="skill-tag">cPanel</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card__header">
+                    <div class="skill-card__icon">
+                        <i class="uil uil-award"></i>
+                    </div>
+                    <div>
+                        <h3 class="skill-card__title">Achievements</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">Awards & Recognition</p>
+                    </div>
+                </div>
+                <div style="color: var(--text-secondary); line-height: 1.8; font-size: 0.9rem;">
+                    <p>🏆 2nd Runner Up - WebXtream Hackathon 2025</p>
+                    <p>🎯 Finalist - Bitfest Datathon 2025</p>
+                    <p>🥈 1st Runner Up - Business Idea Presentation</p>
+                    <p>💻 Specialist at Codeforces | 3-star CodeChef</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects" style="background: var(--bg-secondary);">
+        <div class="section__header">
+            <h2 class="section__title">Featured Projects</h2>
+            <p class="section__subtitle">Some of my recent work</p>
+        </div>
+        <div class="projects__container">
+            <div class="project-card">
+                <div class="project-card__image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <img src="images/crime desk.jpg" alt="Crime Desk Project">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Crime Desk</h3>
+                    <p class="project-card__description">
+                        Crime-focused social media platform with AI-generated captions, sentiment analysis, 
+                        image authentication, OTP-based login, and real-time notifications using FastAPI.
+                    </p>
+                    <div class="project-card__tags">
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">FastAPI</span>
+                        <span class="project-tag">Sentiment Analysis</span>
+                        <span class="project-tag">OTP</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="https://github.com/Md-Shoaib-Abdullah-Khan" class="btn btn-primary btn-sm" style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                            View Project <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card__image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <img src="images/chatbot.jpg" alt="RAG Chatbot Project">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">RAG Chatbot</h3>
+                    <p class="project-card__description">
+                        Retrieval-Augmented Generation chatbot using Ollama embeddings, FAISS vector database, 
+                        and Mistral LLM for context-aware responses with Streamlit frontend.
+                    </p>
+                    <div class="project-card__tags">
+                        <span class="project-tag">RAG</span>
+                        <span class="project-tag">LLM</span>
+                        <span class="project-tag">FAISS</span>
+                        <span class="project-tag">Streamlit</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="https://github.com/Md-Shoaib-Abdullah-Khan/RAG-Chatbot" class="btn btn-primary btn-sm" style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                            View Project <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card__image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <img src="images/story_book.jpg" alt="Thakurmar Jhuli Project">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Thakurmar Jhuli</h3>
+                    <p class="project-card__description">
+                        AI-based storytelling app with voice interaction. Users request fairy tales via voice, 
+                        generated using Gemma model and narrated with PlayAI-TTS.
+                    </p>
+                    <div class="project-card__tags">
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">Voice AI</span>
+                        <span class="project-tag">TTS</span>
+                        <span class="project-tag">Whisper</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="https://github.com/Md-Shoaib-Abdullah-Khan/Thakurmar-Jhuli" class="btn btn-primary btn-sm" style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                            View Project <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card__image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                    <img src="images/RAG.jpg" alt="Bangla RAG Project">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Bangla RAG</h3>
+                    <p class="project-card__description">
+                        Bilingual RAG system for Bangla and English queries on Bangla textbooks. 
+                        Built with LangChain, LangGraph, and Chroma DB with custom chunking.
+                    </p>
+                    <div class="project-card__tags">
+                        <span class="project-tag">RAG</span>
+                        <span class="project-tag">LangChain</span>
+                        <span class="project-tag">Bangla NLP</span>
+                        <span class="project-tag">Chroma</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="https://github.com/Md-Shoaib-Abdullah-Khan/Bangla-RAG" class="btn btn-primary btn-sm" style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                            View Project <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card__image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                    <img src="images/hand raise.jpg" alt="Handraise Detection Project">
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Handraise Detection</h3>
+                    <p class="project-card__description">
+                        Computer vision system using fine-tuned YOLOv8 on custom dataset 
+                        to detect hand raises and identify persons in real-time via CCTV.
+                    </p>
+                    <div class="project-card__tags">
+                        <span class="project-tag">Computer Vision</span>
+                        <span class="project-tag">YOLO</span>
+                        <span class="project-tag">Real-time</span>
+                        <span class="project-tag">Detection</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="https://github.com/Md-Shoaib-Abdullah-Khan/Handraise-Detection" class="btn btn-primary btn-sm" style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                            View Project <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section__header">
+            <h2 class="section__title">Get In Touch</h2>
+            <p class="section__subtitle">Let's work together on your next project</p>
+        </div>
+        <div class="contact__container">
+            <p style="color: var(--text-secondary); font-size: 1.125rem; margin-bottom: 2rem;">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            </p>
+            <div class="contact__info">
+                <div class="contact-item">
+                    <div class="contact-item__icon">
+                        <i class="uil uil-envelope"></i>
+                    </div>
+                    <div class="contact-item__content">
+                        <h3 class="contact-item__title">Email</h3>
+                        <p class="contact-item__value">mdshoaib.a.khan@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item__icon">
+                        <i class="uil uil-phone"></i>
+                    </div>
+                    <div class="contact-item__content">
+                        <h3 class="contact-item__title">Phone</h3>
+                        <p class="contact-item__value">+880 1303608379</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item__icon">
+                        <i class="uil uil-map-marker"></i>
+                    </div>
+                    <div class="contact-item__content">
+                        <h3 class="contact-item__title">Hometown</h3>
+                        <p class="contact-item__value">Rajshahi, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    
-    
-  <!-- End footer -->
-  </footer>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__social">
+                <a href="https://github.com/Md-Shoaib-Abdullah-Khan" target="_blank" class="social-link">
+                    <i class="uil uil-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shoaib-khan-5475031aa/" target="_blank" class="social-link">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+                <a href="https://www.kaggle.com/mdshoaibabdullahkhan" target="_blank" class="social-link">
+                    <i class="uil uil-chart-line"></i>
+                </a>
+            </div>
+            <p style="color: var(--text-secondary);">
+                © 2025 Md Shoaib Abdullah Khan. All rights reserved.
+            </p>
+        </div>
+    </footer>
 
-<!-- END PAGE CONTENT -->
-</div>
+    <!-- Scroll to Top -->
+    <div class="scroll-top" id="scroll-top">
+        <i class="uil uil-arrow-up"></i>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-theme');
+            icon.classList.remove('uil-moon');
+            icon.classList.add('uil-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            
+            if (body.classList.contains('dark-theme')) {
+                icon.classList.remove('uil-moon');
+                icon.classList.add('uil-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.classList.remove('uil-sun');
+                icon.classList.add('uil-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Scroll Header
+        function scrollHeader() {
+            const header = document.getElementById('header');
+            if (window.scrollY >= 80) {
+                header.classList.add('scroll-header');
+            } else {
+                header.classList.remove('scroll-header');
+            }
+        }
+        window.addEventListener('scroll', scrollHeader);
+
+        // Active Link on Scroll
+        const sections = document.querySelectorAll('section[id]');
+        
+        function scrollActive() {
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(current => {
+                const sectionHeight = current.offsetHeight;
+                const sectionTop = current.offsetTop - 100;
+                const sectionId = current.getAttribute('id');
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelector('.nav__link[href*=' + sectionId + ']').classList.add('active-link');
+                } else {
+                    document.querySelector('.nav__link[href*=' + sectionId + ']').classList.remove('active-link');
+                }
+            });
+        }
+        window.addEventListener('scroll', scrollActive);
+
+        // Scroll to Top Button
+        const scrollTop = document.getElementById('scroll-top');
+        
+        function showScrollTop() {
+            if (window.scrollY >= 560) {
+                scrollTop.classList.add('show');
+            } else {
+                scrollTop.classList.remove('show');
+            }
+        }
+        window.addEventListener('scroll', showScrollTop);
+
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth Scroll for Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
+                    
